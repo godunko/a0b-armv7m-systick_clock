@@ -9,7 +9,7 @@ pragma Restrictions (No_Elaboration_Code);
 pragma Ada_2022;
 
 with A0B.ARMv7M.Instructions;
-with A0B.ARMv7M.SCS.SYST; use A0B.ARMv7M.SCS.SYST;
+with A0B.ARMv7M.SCS.SysTick; use A0B.ARMv7M.SCS.SysTick;
 
 package body A0B.ARMv7M.SysTick is
 

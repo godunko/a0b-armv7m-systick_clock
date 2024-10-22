@@ -11,7 +11,7 @@ pragma Ada_2022;
 with A0B.ARMv7M.Instructions;
 with A0B.ARMv7M.SCS.SysTick; use A0B.ARMv7M.SCS.SysTick;
 
-package body A0B.ARMv7M.SysTick is
+package body A0B.ARMv7M.SysTick_Clock is
 
    procedure SysTick_Handler
      with Export, Convention => C, External_Name => "SysTick_Handler";
@@ -124,4 +124,4 @@ package body A0B.ARMv7M.SysTick is
       A0B.ARMv7M.Instructions.Enable_Interrupts;
    end SysTick_Handler;
 
-end A0B.ARMv7M.SysTick;
+end A0B.ARMv7M.SysTick_Clock;
